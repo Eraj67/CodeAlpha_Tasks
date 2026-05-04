@@ -1,0 +1,60 @@
+/* GLOBAL SAFE FIX */
+* { 
+    box-sizing: border-box;
+ } 
+/* TABLETS */
+@media (max-width: 1024px) {
+     .card img { height: 200px; }
+      .card h1 { font-size: 18px; } 
+    } 
+/* LARGE PHONES */
+@media (max-width: 768px) {
+     .card img { height: 190px; } 
+     .card h1 { font-size: 17px; }
+      .card p { font-size: 13px; }
+     } 
+/* SMALL PHONES */
+@media (max-width: 480px) { 
+    .card img { height: 170px; } 
+    .card { padding: 12px; }
+    .card h1 { font-size: 16px; } 
+    .card p { font-size: 12px; } 
+} 
+/* VERY SMALL PHONES (iPhone SE etc.) */
+@media (max-width: 360px) {
+     .card img { height: 150px;
+    object-fit: cover;
+     object-position: center 35%;}
+    .card { padding: 10px; } 
+    .card h1 { font-size: 15px; }
+ } 
+/* 🔥 GLOBAL FIX */
+* { 
+    box-sizing: border-box;
+ } 
+/* 📱 LAYOUT FIX */
+header, section { 
+    width: 100%;
+    max-width: 1200px; 
+    margin: auto; 
+} 
+/* 📱 GRID FIX */
+.grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+    gap: 15px; 
+} 
+/* 📱 SMALL SCREENS */
+@media (max-width: 768px) {
+    header { padding: 15px; } 
+    section { padding: 10px; } 
+    .card img { height: 180px;
+    object-fit: cover;
+    object-position: center 25%; } 
+} 
+/* 📱 VERY SMALL */
+ @media (max-width: 480px) { 
+    .card img { height: 160px;
+    object-fit: cover;
+    object-position: center 30%; } 
+}

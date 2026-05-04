@@ -1,0 +1,113 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #000000, #1a0000, #000000);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* TOP IMAGE */
+body > img {
+    width: 90%;
+    max-width: 850px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    filter: brightness(85%) contrast(120%);
+}
+
+/* TITLE */
+body > h1 {
+    font-size: 50px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    color: #ef4444; /* strong red */
+}
+
+/* DESCRIPTION */
+body > p {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+    font-size: 16px;
+    color: #d1d5db;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+/* CARD */
+.card {
+    background: linear-gradient(145deg, #111111, #1f1f1f);
+    border-radius: 15px;
+    padding: 15px;
+    transition: all 0.35s ease;
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.05);
+    overflow: hidden;
+}
+
+/* IMAGE */
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.4s ease;
+}
+
+/* TEXT */
+.card h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #9ca3af;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.9);
+    border: 1px solid rgba(239,68,68,0.5);
+}
+
+/* IMAGE ZOOM */
+.card:hover img {
+    transform: scale(1.1);
+}
+
+/* RED GLOW LINE (ATEEZ STYLE 🔥) */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ef4444, transparent);
+    transition: 0.5s;
+}
+
+.card:hover::before {
+    left: 100%;
+}
+.members h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}

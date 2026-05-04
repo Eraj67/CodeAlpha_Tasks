@@ -1,0 +1,99 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #412b2b, #5d3232, #663434);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* TOP IMAGE */
+body > img {
+    width: 90%;
+    max-width: 800px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+/* TITLE */
+body > h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+/* DESCRIPTION */
+body > p {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+    font-size: 16px;
+    color: #cccccc;
+}
+.members h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+/* CARD */
+.card {
+    background: #121212;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* IMAGE */
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.4s ease;
+}
+
+/* TEXT */
+.card h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #bbbbbb;
+}
+
+/* HOVER EFFECT (ENHYPEN STYLE 🔥) */
+.card:hover {
+    transform: translateY(-10px) scale(1.04);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.8);
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+/* GLOW EFFECT */
+.card:hover {
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
