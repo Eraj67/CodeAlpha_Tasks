@@ -1,0 +1,102 @@
+/* ========================= */
+/* SAFE RESPONSIVE FIX */
+/* ========================= */
+
+/* Prevent horizontal scrolling everywhere */
+html, body {
+    overflow-x: hidden;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ========================= */
+/* TABLET (iPad, Nest Hub, etc.) */
+/* ========================= */
+@media (max-width: 1024px) {
+
+    section {
+        padding: 30px 20px;
+    }
+
+    .projects {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box {
+        width: 45%;
+        margin: 10px;
+    }
+
+    .project-card {
+        width: 80%;
+    }
+}
+
+/* ========================= */
+/* MOBILE (phones) */
+/* ========================= */
+@media (max-width: 600px) {
+
+    /* NAV STACK */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* PROJECTS */
+    
+/* FIX PROJECT BOX STRETCHING IN MOBILE */
+.projects {
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    width: 80%;
+    max-width: 300px;
+    flex: none;
+    text-align: center;
+}
+
+    /* PROJECT CARD */
+    .project-card {
+        width: 95%;
+    }
+
+    /* CONTACT FORM */
+    .contact form {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+/* ========================= */
+/* SMALL PHONES */
+/* ========================= */
+@media (max-width: 400px) {
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .box {
+        width: 95%;
+    }
+}
